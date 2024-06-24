@@ -80,14 +80,13 @@ main {
         position: relative;
     }
     
-    .right-side-list {
+    .right-side-list {  
         list-style: none;
         padding: 0;
         margin: 0;
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         right: 20px;
-        top: 60px;
+        top: 20px;
         width: 200px;
     
         li {
