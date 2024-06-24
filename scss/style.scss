@@ -10,7 +10,18 @@ body {
 header {
     background-color: $primary-color;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    .logo {
+        img {
+            height: 50px; 
+            width: 200px;
+        }
+    }
     
     nav {
         ul {
@@ -35,6 +46,7 @@ header {
         }
     }
 }
+
 
 main {
     padding: 20px;

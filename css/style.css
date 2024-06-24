@@ -7,7 +7,15 @@ body {
 header {
   background-color: #007bff;
   color: white;
-  padding: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo img {
+  height: 50px;
+  width: 200px;
 }
 header nav ul {
   list-style-type: none;
