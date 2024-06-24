@@ -2,78 +2,84 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f9fa;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-header {
+.header {
+  width: 100%;
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-header .logo img {
-  height: 50px;
-  width: 200px;
+.header .logo img {
+  height: 40px;
 }
-header nav ul {
-  list-style-type: none;
+.header .nav ul {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
-header nav ul li {
-  display: inline;
-  margin-right: 20px;
+.header .nav ul li {
+  margin-left: 20px;
 }
-header nav ul li a {
+.header .nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
 }
-header nav ul li a:hover {
-  text-decoration: underline;
+.header .nav ul li a:hover {
+  color: #545b62;
 }
 
-main {
-  padding: 20px;
-}
-main .section {
-  margin-bottom: 30px;
-}
-main .section h1, main .section h2 {
-  color: #007bff;
-}
-main .section p {
-  color: #6c757d;
-}
-main .section img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 600px;
-  height: 400px;
-}
-main .container {
+.container {
   width: 80%;
+  max-width: 1200px;
   background: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  margin-top: 20px;
 }
-main .right-side-list {
+
+.content-section {
+  margin-bottom: 40px;
+}
+.content-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.content-section h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.content-section p {
+  color: #212529;
+}
+
+.right-side-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  position: fixed;
-  right: 20px;
-  top: 20px;
+  position: sticky;
+  top: 60px;
+  right: 0;
   width: 200px;
+  align-self: flex-start;
 }
-main .right-side-list li {
+.right-side-list li {
   background: #007bff;
   color: white;
   padding: 15px;
@@ -82,17 +88,46 @@ main .right-side-list li {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background 0.3s, transform 0.3s;
 }
-main .right-side-list li:hover {
+.right-side-list li:hover {
   background: #0062cc;
   transform: translateX(-10px);
 }
+.right-side-list li a {
+  color: white;
+  text-decoration: none;
+}
+.right-side-list li a:hover {
+  color: #545b62;
+}
 
-footer {
+.footer {
+  width: 100%;
   background-color: #007bff;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.footer p {
+  margin-bottom: 10px;
+}
+.footer .footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer-nav ul li {
+  margin: 0 10px;
+}
+.footer .footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.footer .footer-nav ul li a:hover {
+  color: #545b62;
 }/*# sourceMappingURL=style.css.map */
