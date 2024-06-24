@@ -39,6 +39,14 @@ main .section h1, main .section h2 {
 main .section p {
   color: #6c757d;
 }
+main .section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 footer {
   background-color: #007bff;

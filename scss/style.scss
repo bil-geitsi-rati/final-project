@@ -1,7 +1,6 @@
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 
-// Global styles
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -49,6 +48,14 @@ main {
         
         p {
             color: $secondary-color;
+        }
+        img {
+            display: block;
+            max-width: 100%; 
+            height: auto; 
+            margin: 20px auto; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         }
     }
 }
