@@ -1,0 +1,64 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Global styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 0;
+    
+    nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+            li {
+                display: inline;
+                margin-right: 20px;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 20px;
+    
+    .section {
+        margin-bottom: 30px;
+        
+        h1, h2 {
+            color: $primary-color;
+        }
+        
+        p {
+            color: $secondary-color;
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
