@@ -206,3 +206,39 @@ body {
         }
     }
 }
+@media (max-width: 768px) {
+    .right-side-list {
+        display: none; 
+        position: fixed;
+        bottom: 70px; 
+        right: 20px;
+        width: auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        &.show {
+            display: block; 
+        }
+
+        li {
+            margin-bottom: 0; 
+
+            a {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .burger-icon {
+        display: block; 
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sections-container {
+        width: 100%;
+    }
+}
