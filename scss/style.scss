@@ -18,7 +18,7 @@ body {
 .header {
     width: 100%;
     background-color: $primary-color;
-    color: white;n  
+    color: white;  
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -145,6 +145,29 @@ body {
         }
     }
 }
+.burger-icon {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+
+    i {
+        font-size: 24px;
+    }
+}
+
 
 
 .footer {
