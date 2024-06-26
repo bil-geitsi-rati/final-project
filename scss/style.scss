@@ -2,6 +2,18 @@ $primary-color: #007bff;
 $secondary-color: #6c757d;
 @import url("//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css");
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Main-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 body {
     font-family: "ALK Sanet", sans-serif;
     line-height: 1.6;
@@ -199,7 +211,57 @@ body {
         }
     }
 }
-
+main {
+    .about {
+        @include Main-about();
+        padding: 40px 0;
+        text-align: center;
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .team-member {
+                background-color: #fff;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: calc(33.333% - 20px);
+                text-align: center;
+                
+                img {
+                    border-radius: 50%;
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    margin-bottom: 10px;
+                }
+                
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                
+                p {
+                    font-size: 16px;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
 
 .right-side-list {
     width: 25%; 
