@@ -211,7 +211,7 @@ body {
         }
     }
 }
-main {
+.AboutPage {
     .about {
         @include Main-about();
         padding: 40px 0;
@@ -257,6 +257,96 @@ main {
                 p {
                     font-size: 16px;
                     color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+.ContactPage {
+    .contact {
+        @include Main-about();
+        padding: 40px 0;
+        text-align: center;
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .form-group {
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: 600px;
+                text-align: left;
+                
+                label {
+                    display: block;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+                
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                
+                textarea {
+                    resize: vertical;
+                }
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: $primary-color;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: left;
+            
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                font-size: 18px;
+                margin-bottom: 10px;
+                
+                i {
+                    margin-right: 10px;
+                    color: $primary-color;
+                }
+                
+                a {
+                    color: $primary-color;
+                    
+                    &:hover {
+                        color: $secondary-color;
+                    }
                 }
             }
         }

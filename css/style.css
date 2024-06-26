@@ -174,27 +174,27 @@ body {
   background-color: #0062cc;
 }
 
-main .about {
+.AboutPage .about {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   padding: 40px 0;
   text-align: center;
 }
-main .about h1 {
+.AboutPage .about h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
-main .about p {
+.AboutPage .about p {
   font-size: 18px;
   margin-bottom: 40px;
 }
-main .about .team {
+.AboutPage .about .team {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-main .about .team .team-member {
+.AboutPage .about .team .team-member {
   background-color: #fff;
   padding: 20px;
   margin: 10px;
@@ -203,7 +203,7 @@ main .about .team .team-member {
   width: calc(33.333% - 20px);
   text-align: center;
 }
-main .about .team .team-member img {
+.AboutPage .about .team .team-member img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -211,12 +211,88 @@ main .about .team .team-member img {
      object-fit: cover;
   margin-bottom: 10px;
 }
-main .about .team .team-member h2 {
+.AboutPage .about .team .team-member h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-main .about .team .team-member p {
+.AboutPage .about .team .team-member p {
   font-size: 16px;
+  color: #6c757d;
+}
+
+.ContactPage .contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+.ContactPage .contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.ContactPage .contact p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.ContactPage .contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContactPage .contact form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+.ContactPage .contact form .form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.ContactPage .contact form .form-group input, .ContactPage .contact form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.ContactPage .contact form .form-group textarea {
+  resize: vertical;
+}
+.ContactPage .contact form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ContactPage .contact form button:hover {
+  background-color: #6c757d;
+}
+.ContactPage .contact .contact-info {
+  margin-top: 40px;
+  text-align: left;
+}
+.ContactPage .contact .contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.ContactPage .contact .contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.ContactPage .contact .contact-info p i {
+  margin-right: 10px;
+  color: #007bff;
+}
+.ContactPage .contact .contact-info p a {
+  color: #007bff;
+}
+.ContactPage .contact .contact-info p a:hover {
   color: #6c757d;
 }
 
