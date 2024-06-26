@@ -468,11 +468,11 @@ body {
   }
   .content-section img {
     height: 20vw;
-    width: 100vw;
+    width: 900px;
     margin-left: 2vw;
   }
   .content-section .content {
-    width: 90vw;
+    width: 800px;
     height: 10vw;
     margin-left: 2vw;
   }
