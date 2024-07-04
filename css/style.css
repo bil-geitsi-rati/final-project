@@ -469,7 +469,8 @@ body {
   .content-section img {
     height: 20vw;
     width: 900px;
-    margin-left: 2vw;
+    margin-left: 100px;
+    margin-top: 100px;
   }
   .content-section .content {
     width: 800px;
@@ -479,9 +480,15 @@ body {
   .content-section .content h2 {
     font-size: 3vw;
     height: 6vw;
+    margin-left: 250px;
   }
   .content-section .content p {
     font-size: 2vw;
+    margin-left: 230px;
+    margin-bottom: 350px;
+  }
+  .footer {
+    margin-top: 200px;
   }
 }
 @media (max-width: 480px) {
@@ -490,6 +497,7 @@ body {
   }
   .content-section .content h2 {
     font-size: 18px;
+    margin-left: 100px;
   }
   .content-section .content p {
     font-size: 12px;
